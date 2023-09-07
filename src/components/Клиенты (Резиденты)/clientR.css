@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .title {
+    @apply text-2xl font-semibold;
+  }
+  .headerClientR {
+    @apply flex items-center justify-between
+  }
+  .clientContainer {
+    @apply py-10
+  }
+  .formContainerR {
+    @apply py-5 flex items-center w-full
+  }
+}

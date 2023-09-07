@@ -1,0 +1,9 @@
+@tailwind components;
+@layer components {
+  .headerfizl {
+    @apply flex items-center justify-between;
+  }
+  .formContainerfizl {
+    @apply py-5 flex items-center w-full;
+  }
+}

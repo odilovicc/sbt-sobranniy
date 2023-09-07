@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General settings */
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #EEF0F8 !important;
+}
+
+@layer components {
+  .title {
+    @apply text-2xl font-semibold
+  }
+}
+
+/* General settings */
+
+/* Navbar */
+
+
+
+/* Navbar */

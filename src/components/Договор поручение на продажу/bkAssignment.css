@@ -1,0 +1,27 @@
+@tailwind components;
+
+@layer components {
+  .aboutCompanyCard {
+    @apply relative hover:scale-110 w-max p-10 transition-transform duration-500 active:scale-100 overflow-hidden;
+  }
+  
+  .aboutCompanyCard::before {
+    content: '"Some Company"';
+    @apply absolute inset-0 flex items-center w-full h-full opacity-0 transition-opacity duration-300 font-medium font-['Poppins'] text-white justify-center text-2xl z-50;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .aboutCompanyCard a {
+    @apply absolute py-1 px-12 text-center border-2 rounded-full flex justify-center
+  }
+  .aboutCompanyCard:hover .animationDiv {
+    transform: scale(5);
+  }
+  .aboutCompanyCard:hover::before {
+    opacity: 1;
+  }
+  .animationDiv {
+    @apply absolute w-full h-full bg-black -bottom-[180px] transition duration-200 left-0;
+  }
+}
