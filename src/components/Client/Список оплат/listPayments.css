@@ -1,0 +1,12 @@
+@tailwind components;
+@layer components {
+    .defaultScreenView{
+        @apply w-[90vw] mx-auto my-10
+    }
+    .defaultBg {
+        @apply bg-[#1e1e1e] p-10 rounded-md
+    }
+    .headerOfSection {
+        @apply text-xl font-semibold
+    }
+}

@@ -122,5 +122,4 @@ onMounted(() => {
 const products = ref();
 </script>
 <style>
-@import url('../../assets/tailwind.css');
 </style>
