@@ -1,0 +1,9 @@
+@tailwind components;
+@layer components {
+    .headerOfSection {
+        @apply text-xl font-semibold
+    }
+    .requestFromJS{
+        @apply font-semibold py-1 px-3 text-red-500 bg-red-500 bg-opacity-20 rounded-md
+    }
+}

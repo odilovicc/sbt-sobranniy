@@ -10,6 +10,29 @@ import { ref } from "vue";
 
 const items = ref([
   {
+    label: 'Вход и Регистрация',
+    icon: 'pi pi-sign-in',
+    items: [
+      { label: 'Вход', to: '/login' },
+      { label: 'Регистрация клиент', to: '/regclient' }
+      // Other menu items
+    ]
+  },
+  {
+    label: 'Клиент',
+    icon: 'pi pi-user',
+    items: [
+      { label: 'Брокеры', url: '/client/listBrokers' },
+      { label: 'Поручение на продажу', url: '/client/request' },
+      { label: 'Счета на оплату', url: '/client/accounts' },
+      { label: 'Cписок оплат', url: '/client/payments' },
+      { label: 'Реестер сделок', url: '/client/reestr' },
+      { label: 'Список заявок', url: '/client/requestlist' },
+      { label: 'Бюллетень', url: '/client/buliten' }
+      // Other menu items
+    ]
+  },
+  {
     label: 'Брокер',
     icon: 'pi pi-flag',
     items: [
@@ -39,7 +62,7 @@ const items = ref([
 
 @layer components {
   .p-menubar {
-    @apply bg-white flex items-center justify-center my-5 py-3 border-none px-10;
+    @apply bg-white flex items-center justify-center w-max mx-auto my-2 py-3 border-none px-10;
   }
 }
 </style>
